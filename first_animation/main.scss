@@ -2,7 +2,6 @@ $cd-btn: #011c37;
 $cd-txt: #15DEA5;
 
 body{
-    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,4 +55,33 @@ $cd-danger: #b20a37;
             }
         }
     }
+}
+
+.container_ball{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+$ball-size:6rem;
+
+.btn2 {
+    background: green;
+    font-size: 3rem;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    border-radius: 10rem;
+    &:active + .ball{
+        transform: scale(1.5);
+    }
+}
+.ball {
+    width: $ball-size;
+    height: $ball-size;
+    background: green;
+    margin: 8rem 0;
+    border-radius: $ball-size * 0.5;
+    transform: scale(0.5);
+    transition: transform 2000ms;
 }

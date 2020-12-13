@@ -1,5 +1,4 @@
 body {
-  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,6 +45,34 @@ body {
   background-color: #b20a37;
   border: 2px solid #b20a37;
   color: #fff;
+}
+
+.container_ball {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.btn2 {
+  background: green;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 1.85rem 3rem;
+  border-radius: 10rem;
+}
+.btn2:active + .ball {
+  transform: scale(1.5);
+}
+
+.ball {
+  width: 6rem;
+  height: 6rem;
+  background: green;
+  margin: 8rem 0;
+  border-radius: 3rem;
+  transform: scale(0.5);
+  transition: transform 2000ms;
 }
 
 /*# sourceMappingURL=style.css.map */
