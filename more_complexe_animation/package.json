@@ -1,0 +1,11 @@
+{
+  "name": "more_complexe_animation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./style.css"
+  },
+  "author": "Bryan LEGRAS",
+  "license": "ISC"
+}
