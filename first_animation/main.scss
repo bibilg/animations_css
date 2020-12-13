@@ -4,9 +4,14 @@ $cd-txt: #15DEA5;
 body{
     height: 90vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: black;
+    background-color: white;
+}
+
+.container{
+    padding: 4rem;
 }
 
 .btn {
@@ -23,5 +28,32 @@ body{
     transition: transform 400ms; // = transition-property: + transition-duration: 
     &:hover {
         transform: scale(1.15);
+    }
+}
+
+$cd-txt: #6300a0;
+$cd-txt--invalid: #fff;
+$cd-danger: #b20a37;
+.form {
+    &__group {
+        input {
+            border: 2px solid black;
+            border-radius: 100rem;
+            color: $cd-txt;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            outline: none;
+            padding: .5rem 1.5rem;
+            width: 100%;
+            transition: background-color 500ms;
+            &:focus {
+                border: 2px solid $cd-txt;
+            }
+            &:not(:focus):invalid {
+                background-color: $cd-danger;
+                border: 2px solid $cd-danger;
+                color: $cd-txt--invalid;
+            }
+        }
     }
 }
