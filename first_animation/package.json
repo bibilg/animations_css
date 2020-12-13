@@ -1,0 +1,11 @@
+{
+  "name": "first_animation",
+  "version": "1.0.0",
+  "description": "fisrt animation in css",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./main.scss:./style.css"
+  },
+  "author": "Bryan LEGRAS",
+  "license": "ISC"
+}
